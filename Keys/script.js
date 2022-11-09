@@ -4,7 +4,7 @@ const w = document.querySelector('.key-w');
 const a = document.querySelector('.key-a');
 const s = document.querySelector('.key-s');
 const d = document.querySelector('.key-d');
-const LShift = document.querySelector('.key-shift');
+const shift = document.querySelector('.key-shift');
 const space = document.querySelector('.key-space');
 
 (function(){
@@ -27,7 +27,7 @@ document.addEventListener('keydown', function (e) {
     d.classList.add('active');
   }
   if (e.shiftKey) {
-    LShift.classList.add('active');
+    shift.classList.add('active');
   }
   if (e.key === ' ') {
     space.classList.add('active');
@@ -48,7 +48,7 @@ document.addEventListener('keyup', function (e) {
     d.classList.remove('active');
   }
   if (!e.shiftKey) {
-    LShift.classList.remove('active');
+    shift.classList.remove('active');
   }
   if (e.key === ' ') {
     space.classList.remove('active');

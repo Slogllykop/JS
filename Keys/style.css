@@ -35,6 +35,8 @@
 
 #key,
 #key2 {
+  user-select: none;
+  cursor: pointer;
   margin: 3px;
   display: flex;
   justify-content: center;
